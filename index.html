@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Coming+Soon&family=Galada&family=Indie+Flower&family=Macondo&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="./img/loguito.ico" type="image/x-icon">
+    <title>PedíComish</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">PedíComish</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+                <!-- Mueve estas listas dentro del div con la clase navbar-collapse y agrega la clase ms-auto -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link me-3 fw-500 text-white" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light fw-bold text-dark" href="/registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+      <div>
+        <main role="main" class="mb-5">
+            <section class="bg-danger pt-4 pb-5 home-image-container">
+                <div class="container">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-6 mb-0 mb-xl-5">
+                            <h4 class="home-banner-text fw-600 m-0 text-white">Suscribite a Plus PedíComish</h4><br>
+                            <div  class="d-flex align-items-lefth">
+                                <img src="./img/icons8-check-48-removebg-preview.png" alt="Chek" width="20px">
+                            <p class="home-banner-text fw-600 m-0 text-white">Envíos gratis ilimitados en miles de locales</p>
+                            </div>
+                            <div  class="d-flex align-items-lefth">
+                            <img src="./img/icons8-check-48-removebg-preview.png" alt="Chek" width="20px">
+                            <p class="home-banner-text fw-600 m-0 text-white">20 % de devolución en PedíComish Market</p>
+                            </div>
+                            <div  class="d-flex align-items-lefth">
+                            <img src="./img/icons8-check-48-removebg-preview.png" alt="Chek" width="20px">
+                            <p class="home-banner-text fw-600 m-0 text-white">Promociones y beneficios exclusivos</p>
+                            </div>
+                            <div  class="d-flex align-items-lefth">
+                                <img src="./img/icons8-check-48-removebg-preview.png" alt="Chek" width="20px">
+                            <p class="home-banner-text fw-600 m-0 text-white">Ayuda en línea preferencial</p>
+                        </div>
+                            </div>
+                        <div class="col-6 mx-auto">
+                            <img class="img-fluid" src="./img/pcipal-removebg-preview.png" alt="Envios y combos">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    
+            <section class="container my-5">
+                <h2 class="display-3 fw-500 mb-4 mb-lg-5">Descubrí estas opciones</h2>
+            
+          <!--CARDS 1-->  
+                <div class="gx-0 gy-5 g-sm-5 row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                        <article class="col">
+                            <div class="card border-radius-15px shadow h-100">
+                                <img src="./img/mexico.jpg" class="card-event-img border-radius-top-15px img-fluid" alt="Mexico" style="width: 100%; height: 200px;">
+            
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">Órale Chavito</h5>
+                                    <p class="card-text">$2100.00</p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between">
+                                        <b>Puntuación: 1.0/5</b>
+                                        <div class="d-flex align-items-center">
+                                            <img src="./img/comentarios.png" alt="Coment">
+                                            <p class="m-0 ms-2">1</p>
+                                        </div>
+                                    </div>                  
+                                    <div class="my-4">
+                                        <p class="m-0">"La comida vino fría y muy picante"</p>
+                                    </div>
+                                </div>                 
+                                <div class="text-center mb-4">
+                                    <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                                </div>
+                            </div>
+                        </article>
+
+            <!--CARDS 2--> 
+                        <article class="col">
+                            <div class="card border-radius-15px shadow h-100">
+                                <img src="./img/peru.jpg" class="card-event-img border-radius-top-15px img-fluid" alt="Peru" style="width: 100%; height: 200px;">
+            
+                                <div class="card-body pb-0">
+                                    <h5 class="card-title">El Rey Peruano</h5>
+                                    <p class="card-text">$5560.00</p>
+            
+                                    <hr />
+            
+                                            <div class="d-flex justify-content-between">
+                                                <b>Puntuación: 2.5/5</b>
+            
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./img/comentarios.png" alt="Coment">
+                                                    <p class="m-0 ms-2">2</p>
+                                                </div>
+                                            </div>
+                                            <div class="my-4">
+                                                <p class="m-0">"Muy buena la comida, un poco picante para mi gusto"</p>
+                                            </div>
+                                </div>     
+                                <div class="text-center mb-4">
+                                    <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                                </div>
+                            </div>
+                        </article>
+
+            <!--CARDS 3--> 
+            <article class="col">
+                <div class="card border-radius-15px shadow h-100">
+                    <img src="./img/pastas.png" class="card-event-img border-radius-top-15px img-fluid" alt="Pastas" style="width: 100%; height: 200px;">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title">Pasta Querida</h5>
+                        <p class="card-text">$3800.00</p>
+                        <hr />
+                                <div class="d-flex justify-content-between">
+                                    <b>Puntuación: 4.5/5</b>
+
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/comentarios.png" alt="Coment">
+                                        <p class="m-0 ms-2">2</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <p class="m-0">"Muy buena la comida, súper cremoso y fresco todo"</p>
+                                </div>
+                    </div>     
+                    <div class="text-center mb-4">
+                        <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                    </div>
+                </div>
+            </article>         
+                      <!--CARDS 4--> 
+                      <article class="col">
+                        <div class="card border-radius-15px shadow h-100">
+                            <img src="./img/hambur.png" class="card-event-img border-radius-top-15px img-fluid" alt="Hambur" style="width: 100%; height: 200px;">
+                            <div class="card-body pb-0">
+                                <h5 class="card-title">¿Hamburguesitas o ke?</h5>
+                                <p class="card-text">$6000.00</p>
+                                <hr />
+                                        <div class="d-flex justify-content-between">
+                                            <b>Puntuación: 5.0/5</b>
+        
+                                            <div class="d-flex align-items-center">
+                                                <img src="./img/comentarios.png" alt="Coment">
+                                                <p class="m-0 ms-2">3</p>
+                                            </div>
+                                        </div>
+                                        <div class="my-4">
+                                            <p class="m-0">"Excelente!! Todo riquísimo"</p>
+                                        </div>
+                            </div>     
+                            <div class="text-center mb-4">
+                                <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                            </div>
+                        </div>
+                    </article>  
+            <!--CARDS 5-->  
+            <article class="col">
+                <div class="card border-radius-15px shadow h-100">
+                    <img src="./img/sushi.png" class="card-event-img border-radius-top-15px img-fluid" alt="Sushi" style="width: 100%; height: 200px;">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title">Sushito</h5>
+                        <p class="card-text">$10000.00</p>
+                        <hr />
+                                <div class="d-flex justify-content-between">
+                                    <b>Puntuación: 2.5/5</b>
+
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/comentarios.png" alt="Coment">
+                                        <p class="m-0 ms-2">7</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <p class="m-0">"No era muy fresco el sushi"</p>
+                                </div>
+                    </div>     
+                    <div class="text-center mb-4">
+                        <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                    </div>
+                </div>
+            </article>       
+            <!--CARDS 6-->  
+            <article class="col">
+                <div class="card border-radius-15px shadow h-100">
+                    <img src="./img/judio.png" class="card-event-img border-radius-top-15px img-fluid" alt="Judio" style="width: 100%; height: 200px;">
+                    <div class="card-body pb-0">
+                        <h5 class="card-title">Juría</h5>
+                        <p class="card-text">$1800.00</p>
+                        <hr />
+                                <div class="d-flex justify-content-between">
+                                    <b>Puntuación: 4.5/5</b>
+
+                                    <div class="d-flex align-items-center">
+                                        <img src="./img/comentarios.png" alt="Coment">
+                                        <p class="m-0 ms-2">1</p>
+                                    </div>
+                                </div>
+                                <div class="my-4">
+                                    <p class="m-0">"El mejor local de comida judía!!"</p>
+                                </div>
+                    </div>     
+                    <div class="text-center mb-4">
+                        <a class="btn btn-dark" href="javascript:void(0);" onclick="verProducto()">Ver producto</a>
+                    </div>
+                </div>
+            </article>  
+                </div>
+            </section>
+    
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-baset bg-danger py-3 mt-auto d-flex justify-content-center align-items-center">
+        <div class="container">
+            <p class="text-white text-center mb-0">© Copyright PedíComish 2023 - María Sol Garófalo</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/.ar" target="_blank">
+                <img src="./img/facebook.png" alt="fb">
+            </a>
+            <a href="http://www.instagram.com.ar"target="_blank">
+                <img src="./img/instagram.png" alt="ig" >
+            </a>
+            <a href="http://www.twitter.com.ar"target="_blank">
+                <img src="./img/twitter.png" alt="tw" >
+            </a>
+            <a href="http://www.whatsapp.com.ar"target="_blank">
+                <img src="./img/whatsapp.png" alt="ws" >
+            </a>
+        </div>
+        <span class="text-white">PEDICOMISH S.A. es un proveedor de servicios de pago y no está autorizado por el BCRA para operar como entidad financiera.</span>
+        <img src="./img/qr.png" srcset="" height="80" width="80" alt="Data fiscal">
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script>
+    function verProducto() {
+        var usuarioLogueado = false; 
+
+        if (usuarioLogueado) {
+
+            window.location.href = "./productosadmin.php";
+        } else {
+            // Si el usuario no está logueado, muestra un mensaje
+            alert("Primero debe loguearse");
+
+        }
+    }
+</script>
+</body>
+</html>

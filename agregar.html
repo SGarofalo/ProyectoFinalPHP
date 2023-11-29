@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Coming+Soon&family=Galada&family=Indie+Flower&family=Macondo&family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>PedíComish</title>
+    <style>
+        /* Agrega estilos para reducir el tamaño de las imágenes del footer */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">PedíComish</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="productosadmin.php">Inicio</a>
+                </li>
+            </ul>
+
+            <!-- Mueve estas listas dentro del div con la clase navbar-collapse y agrega la clase ms-auto -->
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-box-arrow-left"></i></a>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+
+    <!-- Contenido de la página agregar -->
+    <div class="container">  
+        <div class="textomodificar">
+        <h2 class="text-center">Ingreso de restaurantes</h2>
+        <p class="text-center">Ingresá los datos de la comida que querés agregar</p>
+    </div>
+        <form id="form" method="POST" action="agregar.php" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="comida" style="text-align: center;">Tipo de comida</label>
+                <input class="form-control" type="text" name="comida" placeholder="Comida" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="precio" style="text-align: center;">Precio</label>
+                <input class="form-control" type="text" name="precio" placeholder="Precio" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="imagen" style="text-align: center;">Seleccionar imagen</label>
+                <input class="form-control form-control-sm" type="file"
+                    name="imagen" placeholder="imagen" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="puntuacion">Puntuación</label>
+                <input class="form-control" type="text" name="puntuacion"
+                    placeholder="Puntuacion: 2.5/5"
+                    required>
+            </div>       
+            <div>
+                <label for="comentario">Comentario</label>
+                <input class="form-control" type="text" name="comentario"
+                    placeholder="Deja tu comentario acerca de la comida"
+                    required>
+            </div>
+    
+            <div class="d-grid">
+                <button class="btn btn-danger" type="submit" name="submit">Ingresar</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    <br>
+    <!-- Footer -->
+    <footer class="footer-baset bg-danger py-3 mt-auto d-flex justify-content-center align-items-center">
+        <div class="container">
+            <p class="text-white text-center mb-0">© Copyright PedíComish 2023 - María Sol Garófalo</p>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/.ar" target="_blank">
+                <img src="./img/facebook.png" alt="fb">
+            </a>
+            <a href="http://www.instagram.com.ar"target="_blank">
+                <img src="./img/instagram.png" alt="ig" >
+            </a>
+            <a href="http://www.twitter.com.ar"target="_blank">
+                <img src="./img/twitter.png" alt="tw" >
+            </a>
+            <a href="http://www.whatsapp.com.ar"target="_blank">
+                <img src="./img/whatsapp.png" alt="ws" >
+            </a>
+
+        </div>
+        <span class="text-white">PEDICOMISH S.A. es un proveedor de servicios de pago y no está autorizado por el BCRA para operar como entidad financiera.</span>
+        <img src="./img/qr.png" srcset="" height="80" width="80" alt="Data fiscal">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

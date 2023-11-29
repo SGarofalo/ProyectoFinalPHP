@@ -1,0 +1,239 @@
+
+/*LOGIN*/
+.navbar-brand {
+    font-family: 'Galada', cursive;
+    font-weight: bold; 
+    font-size: 50px; 
+}
+h4.home-banner-text {
+    font-family: 'Coming Soon', cursive;
+    font-size: 35px; 
+}
+p.home-banner-text{
+    font-family: 'Oregano', cursive;
+    font-size: 20px; 
+}
+.nav-item .bi-box-arrow-left {
+  color: white;
+}
+/*FORM*/
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+    width: 500px; /* Changed to increase the form width */
+    border-radius: 10px; /* Added for rounded borders */
+  }
+  
+  form .title {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: inline-flex; /* Make the elements align horizontally */
+    align-items: center;
+  }
+  
+  form label .fa-solid {
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  label {
+    margin-right: 10px; /* Adjust this value to control the spacing between labels and inputs */
+  }
+  form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d1d;
+    padding: 0 5px;
+    font-size: 18px;
+    flex: 1; /* Added for the input field to occupy the remaining space */
+    margin-left: 0px;
+  }
+  
+  form label input::placeholder {
+    color: rgba(37, 37, 37, 0.5);
+  }
+  
+  form .link {
+    color: #252525;
+    margin-bottom: 15px;
+  }
+  form button {
+    color: #fff;
+    border: none;
+    background: rgba(255, 15, 15, 0.781);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .redes img {
+    width: 30px;
+    margin: 0 5px;
+    filter: invert(1);
+    /* Add any additional styles you want for the images inside the redes class */
+  }
+  /*
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }*/
+  .d-grid {
+    justify-content: center;
+    margin-top: 20px; /* Added margin to move the button down */
+  }
+  
+  .btn-danger {
+    padding: 8px 15px; /* Reduced padding to make the button smaller */
+    font-size: 16px; /* Reduced font size to make the button text smaller */
+  }
+  .footer-base {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #d9534f;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.container {
+    margin-top: 20px; /* Add margin-top to create spacing between navbar and cards */
+  }
+
+
+  .container-producto{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-producto img{
+    width: 700px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px #fb1717;
+    margin-top:80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.container-producto h6{
+
+    background-color: #f7fb17;
+    border-radius: 20px;
+    padding: 9px 20px;
+}
+
+.precio-coment{
+    margin-left:40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-producto h1{
+    /* margin-right: 40px; 
+    background-color: #ffffff;*/
+    color: #000000;
+    border-radius:40px;
+    padding: 9px 40px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+
+
+
+.container-producto button{
+    background-color: #010001;
+    border: 0;
+    border-radius: 20px;
+    padding: 9px 10px;
+    margin-top: 50px;
+}
+
+.container-producto button:hover{
+    font-size: 1.1rem;
+}
+.container-producto a{
+    color: #ffffff;
+    padding: 10px;
+}
+
+i{
+    color: #010001;
+}
+
+.modifborrar a{
+    color: #010001;
+    padding: 10px;
+}
+
+.textomodificar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textomodificar h2{
+    background-color: #ffdd66;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.textomodificar p:hover{
+    color: #fb1717;
+    font-size: 1.1rem;
+}
+
+#upload .bi-cloud-upload{
+    color: #fb1717;
+}
+
+.back{
+    min-height: fit-content;
+}
+
+.containermod{
+    display: flex;
+    flex-direction: column;
+}
+
+.containeragr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    min-height:fit-content;
+    flex: 1;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.agregarcarrito i{
+    color: #ffffff;
+    padding-right: 5px;
+}
+
+/*responsive*/
